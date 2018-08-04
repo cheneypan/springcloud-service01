@@ -29,7 +29,8 @@ eureka:
     service-url:
       defaultZone: http://${discovery:localhost}:6001/eureka/
   instance:
-    hostname: ${ServiceAddress:localhost}
+    hostname: ${spring.application.name}
+#    hostname: ${ServiceAddress:localhost}
 
 security:
   basic:
