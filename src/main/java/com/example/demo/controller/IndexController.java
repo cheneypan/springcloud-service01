@@ -29,7 +29,7 @@ public class IndexController {
 
     @GetMapping("/reply")
     public String reply(String message){
-        String reply = String.format("[%s]reply, %s!", df.format(new Date()), message);
+        String reply = String.format("[%s]reply01, %s!", df.format(new Date()), message);
         logger.info(reply);
         return reply;
     }
