@@ -24,7 +24,7 @@ public class IndexController {
         if (null == name || name.trim().equals("")) {
             return String.format("[%s]the name is null", df.format(new Date()));
         }
-        return String.format("[%s]hello, %s!", df.format(new Date()), name);
+        return String.format("[%s][test]hello, %s!", df.format(new Date()), name);
     }
 
     @GetMapping("/reply")
